@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="redRibbonTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2a2a" />
+      <stop offset="55%" stop-color="#e50914" />
+      <stop offset="100%" stop-color="#8b0000" />
+    </linearGradient>
+    <linearGradient id="redRibbonBottom" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b3b" />
+      <stop offset="50%" stop-color="#d40812" />
+      <stop offset="100%" stop-color="#7a0000" />
+    </linearGradient>
+    <linearGradient id="playGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3838" />
+      <stop offset="100%" stop-color="#b30000" />
+    </linearGradient>
+    <linearGradient id="flixTextGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff2e2e" />
+      <stop offset="100%" stop-color="#c40000" />
+    </linearGradient>
+    <filter id="dropGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" rx="48" fill="#050505" />
+
+  <!-- S Ribbon Emblem + Play Triangle -->
+  <g filter="url(#dropGlow)" transform="translate(0, -15)">
+    <!-- Upper S Curve (Film Strip) -->
+    <path
+      d="M 325 110 C 255 68, 165 90, 168 165 C 170 215, 215 245, 228 252 L 228 198 C 208 188, 204 165, 212 148 C 224 124, 268 128, 296 152 Z"
+      fill="url(#redRibbonTop)"
+    />
+    <!-- Film sprocket holes on upper-left curve -->
+    <rect x="180" y="138" width="11" height="14" rx="2" transform="rotate(-18 180 138)" fill="#0a0505" />
+    <rect x="184" y="162" width="11" height="14" rx="2" transform="rotate(-8 184 162)" fill="#0a0505" />
+    <rect x="193" y="185" width="11" height="14" rx="2" transform="rotate(8 193 185)" fill="#0a0505" />
+
+    <!-- Lower S Curve (Film Strip) -->
+    <path
+      d="M 172 260 C 242 302, 332 280, 329 205 C 327 155, 282 125, 269 118 L 269 172 C 289 182, 293 205, 285 222 C 273 246, 229 242, 201 218 Z"
+      fill="url(#redRibbonBottom)"
+      transform="translate(-4, 42)"
+    />
+    <!-- Film sprocket holes on lower-right curve -->
+    <rect x="294" y="218" width="11" height="14" rx="2" transform="rotate(15 294 218)" fill="#0a0505" />
+    <rect x="286" y="241" width="11" height="14" rx="2" transform="rotate(28 286 241)" fill="#0a0505" />
+    <rect x="272" y="261" width="11" height="14" rx="2" transform="rotate(40 272 261)" fill="#0a0505" />
+
+    <!-- Center Play Triangle -->
+    <path
+      d="M 232 166 L 232 228 C 232 234, 238 237, 243 234 L 288 203 C 293 200, 293 194, 288 191 L 243 160 C 238 157, 232 160, 232 166 Z"
+      fill="url(#playGrad)"
+    />
+  </g>
+
+  <!-- Wordmark: SilaFlix -->
+  <text x="250" y="382" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="86" letter-spacing="-2">
+    <tspan fill="#ffffff">Sila</tspan><tspan fill="url(#flixTextGrad)">Flix</tspan>
+  </text>
+
+  <!-- Subtitle: Your World of Entertainment -->
+  <text x="250" y="422" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="18" fill="#e5e5e5" letter-spacing="4.5">
+    Your World of Entertainment
+  </text>
+</svg>

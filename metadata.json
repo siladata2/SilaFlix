@@ -1,0 +1,6 @@
+{
+  "name": "SilaFlix",
+  "description": "Your World of Entertainment - Global streaming platform for authorized movies, TV series, reels, movie recaps, and permitted downloads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
